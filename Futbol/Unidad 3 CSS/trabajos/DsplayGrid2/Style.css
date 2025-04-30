@@ -1,0 +1,152 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "header"
+        "main"
+        "sidebar"
+        "footer";
+    grid-template-rows: auto;
+    min-height: 100vh;
+    gap: 10px;
+    padding: 10px;
+    background-color: aliceblue;
+}
+
+/* Menú fijo */
+.header {
+    grid-area: header;
+    background: url('path-to-your-image.jpg') no-repeat center center/cover;
+    position: fixed; /* Fijar el menú en la parte superior */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10; /* Asegurar que esté por encima del resto del contenido */
+    color: white;
+    text-align: center;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro con opacidad */
+    z-index: 1;
+}
+
+.header h1, .header p {
+    position: relative;
+    z-index: 2;
+    margin: 0;
+    padding: 0 20px;
+}
+
+/* Espaciado para evitar que el contenido se superponga con el menú */
+.grid-container {
+    padding-top: 60px; /* Altura del menú fijo */
+}
+
+.descripcion {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 1.5rem;
+    background-color: rgb(214, 220, 215);
+    justify-content: center;
+    margin-top: 20px; /* Espaciado adicional */
+}
+
+.descripcion figure {
+    position: relative;
+    margin: 0;
+    text-align: center;
+}
+
+.descripcion img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.descripcion figcaption {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: #333;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.main {
+    grid-area: main;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; /* Espaciado adicional */
+}
+
+.footer {
+    grid-area: footer;
+    padding: 10px;
+    background-color: rgb(6, 80, 55);
+    color: aliceblue;
+    text-align: center;
+    margin-top: 20px; /* Espaciado adicional */
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer_logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer img {
+    width: 50px;
+    height: auto;
+    padding: 0 10px;
+}
+
+.black-ops-one-regular {
+    font-family: "Black Ops One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Diseño responsivo */
+@media (min-width: 768px) {
+    .grid-container {
+        grid-template-columns: 200px 1fr;
+        grid-template-rows: 80px 1fr 60px;
+        grid-template-areas: 
+            "header header"
+            "sidebar main"
+            "footer footer";
+    }
+}

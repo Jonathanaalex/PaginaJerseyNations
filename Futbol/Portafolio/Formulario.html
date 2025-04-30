@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <form action="">
+        <label for="Nombre">
+            <span>Cual es tu nombre?</span>
+            <input type="text" id="Nombre" placeholder="Tu Nombre" size="
+            50" required/>
+        </label><br><br>
+
+        <label for="Web">
+            <span>Web?</span>
+            <input type="url" name="url" required size="40">
+        </label><br><br>
+
+
+        <label for="Correo">
+            <span>Cual es tu email?</span>
+            <input type="email" name="Correo" id="Correo" autocomplete="email" required size="40">
+        </label><br><br>
+
+        <label for="Telefono">
+            <span>Cual es tu telefono?</span>
+            <input type="tel" name="Correo" id="Correo" autocomplete="email" required size="40">
+        </label><br><br>
+
+        <label for="Paswword">
+            <span>Cual es tu contraseña</span>
+            <input type="password" name="Correo" id="Correo" autocomplete="email" required size="40">
+        </label><br><br>
+
+        <label for="Horario">
+            <span>Fecha</span>
+            <input type="time" id="Horario" size="50" required/>
+        </label><br><br>
+        <input type="search"><br><br>
+        <input type="submit"><br><br>
+        <p>Pustos de trabajo buscados</p>
+        
+        <label for="puesto_directivo">
+            <input name="puesto_directivo" type="checkbox" />
+            <span>Direccion</span>
+        </label><br><br>
+        
+        <label for="puesto_tecnico">
+            <input name="puesto_tecnico" type="checkbox" />
+            <span>Tecnicos</span>
+        </label><br><br>
+        
+        <label for="puesto_empleado">
+            <input name="puesto_empleado" type="checkbox" />
+            <span>Empleado</span>
+        </label>
+
+        <p>Sexo</p>
+       
+        <label for="Sexo">
+            <input type="radio" name="sexo" value="hombre" checked="checked" />
+            <span>Hombre</span>
+        </label>
+        <label for="sexo">
+            <input type="radio" name="sexo" value="mujer" />
+            <span>Mujer</span>
+        </label><br>
+
+        <input type="image" src="./Imagenes/enter_the_keyboard_icon_155439.png" />
+
+    </form>
+    <form action="www.youtube.com" method="get">
+        <label for="fname">Nombre</label><br>
+        <input type="text" id="fname" name="lname" required><br>
+        <label for="lname">Apellido</label><br>
+        <input type="text" id="lname" name="lname" required><br>
+        <textarea name="descripcion" cols="40" rows="5"></textarea>   
+        <input type="submit" value="submit"><br>  
+          
+    </form>
+
+    <fieldset>
+        <legend>Datos Personales</legend >
+        <label for="fname">Nombre</label><br>
+        <input type="text" id="fname" name="lname" required><br>
+        <label for="lname">Apellido</label><br>
+        <input type="text" id="lname" name="lname" required><br>
+        <label for="Dni">DNI</label><br>
+        <input type="text" id="Dni" name="Dni" required><br>
+            <br>
+        <select name="cursos" id="" multiple>
+            <option value="JavaScript">JavaScript</option>
+            <option value="HTML5">HTML5</option>
+            <option value="CSS3">CSS3</option>
+            <option value="Web Standards">Web Standards</option>
+        </select><br><br>
+        <input list="cursos">
+        <datalist id="cursos">
+            <option value="JavaScript"></option>
+            <option value="HTML5"></option>
+            <option value="CSS3"></option>
+            <option value="Web Standards"></option>
+        </datalist>
+    </fieldset>
+    <fieldset>
+        <legend>Datos de conexion</legend>
+        <label for="fname">Nombre del usuario</label><br>
+        <input type="text" id="fname" name="lname" required><br>
+        <label for="lname">Apellido</label><br>
+        <input type="text" id="lname" name="lname" required><br>
+        <label for="Dni">DNI</label><br>
+        <input type="text" id="Dni" name="Dni" required><br>
+    </fieldset>
+      
+    
+</body>
+</html>

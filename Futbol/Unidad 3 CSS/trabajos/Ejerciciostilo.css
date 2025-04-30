@@ -1,0 +1,42 @@
+h1{
+    color: red;
+    font-size: medium;
+    text-align:left;
+    font-family: Arial;
+    font-style: normal;
+    text-decoration: underline;
+    
+}
+h2{
+    color: rgb(54, 54, 190);
+    font-size: 40px;
+    text-align: right;
+    font-family: Arial;
+    font-style: oblique;
+    text-decoration: line-through;
+}
+h3{
+    color: rgb(25, 200, 25);
+    font-size: xx-small;
+    text-align: center;
+    font-family: Arial;
+    
+
+
+}
+p{
+    color: rgb(20, 178, 196);
+    font-size: xx-large;
+    text-align: center;
+    font-family: Arial;
+    text-decoration: none;
+
+}
+i{
+    color: rgb(201, 8, 201);
+    text-align: justify;
+    font-size: x-large;
+    font-family: Arial;
+
+    
+}

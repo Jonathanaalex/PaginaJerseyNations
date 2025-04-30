@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posición Relativa en CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        
+        .contenedor {
+            border: 2px solid #333;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .caja {
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            border: 1px solid blue;
+            display: inline-block;
+            margin: 10px;
+            text-align: center;
+            line-height: 100px;
+        }
+        
+        /* Ejemplo de posición relativa */
+        .relativa {
+            position: relative;
+            /* Se mueve 20px desde la parte superior y 30px desde la izquierda 
+               de su posición original */
+            top: 20px;
+            left: 30px;
+            background-color: lightcoral;
+        }
+        
+        /* Otro ejemplo con desplazamiento negativo */
+        .relativa-negativa {
+            position: relative;
+            bottom: 15px;
+            right: 25px;
+            background-color: lightgreen;
+        }
+        
+        /* Ejemplo con z-index */
+        .relativa-zindex {
+            position: relative;
+            top: -40px;
+            left: 50px;
+            background-color: rgba(255, 255, 0, 0.7);
+            z-index: 10; /* Aparecerá por encima de otros elementos */
+        }
+    </style>
+</head>
+<body>
+    <h1>Ejemplos de Posición Relativa en CSS</h1>
+    
+    <div class="contenedor">
+        <h2>Posición Normal (sin position: relative)</h2>
+        <div class="caja">Caja 1</div>
+        <div class="caja">Caja 2</div>
+        <div class="caja">Caja 3</div>
+    </div>
+    
+    <div class="contenedor">
+        <h2>Posición Relativa (con desplazamiento positivo)</h2>
+        <div class="caja">Caja 1</div>
+        <div class="caja relativa">Caja 2 (relative)</div>
+        <div class="caja">Caja 3</div>
+        <p>Nota: La caja 2 se desplaza 20px hacia abajo y 30px a la derecha de su posición original, pero el espacio que ocupaba originalmente se mantiene reservado.</p>
+    </div>
+    
+    <div class="contenedor">
+        <h2>Posición Relativa (con desplazamiento negativo)</h2>
+        <div class="caja">Caja 1</div>
+        <div class="caja relativa-negativa">Caja 2 (relative)</div>
+        <div class="caja">Caja 3</div>
+        <p>Nota: La caja 2 se desplaza 15px hacia arriba (bottom: -15px) y 25px a la izquierda (right: -25px) de su posición original.</p>
+    </div>
+    
+    <div class="contenedor">
+        <h2>Posición Relativa con z-index</h2>
+        <div class="caja">Caja 1</div>
+        <div class="caja relativa-zindex">Caja 2 (relative con z-index)</div>
+        <div class="caja">Caja 3</div>
+        <p>Nota: La caja 2 se superpone a las demás gracias al z-index más alto.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,95 @@
+.main-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 10px 0;
+    list-style: none;
+    background-color: rgb(16, 145, 205);
+    display: flex;
+    justify-content: center;
+    color: white;
+    z-index: 1000;
+}
+
+.main-nav .nav_item {
+    display: inline-block;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 2px;
+    text-decoration: none;
+}
+
+.main-nav .nav_item a:hover {
+    color: blue;
+}
+
+.main-nav .nav_item a:active {
+    color: red;
+}
+
+.main-nav .nav_item a::after {
+    content: " | ";
+}
+
+.main-nav .nav_item:last-child a::after {
+    content: "";
+}
+a:link {
+    color: blue;
+  } /* Enlaces no visitados */
+  a:visited {
+    color: purple;
+  } /* Enlaces visitados */
+  a:hover {
+    background: yellow;
+  } /* El usuario esta sobre el enlace */
+  a:active {
+    color: lime;
+  } /* Enlaces activos */
+  a:any-link {
+    border: 1px solid blue;
+    color: orange;
+  }
+  
+  /* navegadores WebKit */
+  a:-webkit-any-link {
+    border: 1px solid blue;
+    color: orange;
+  }
+
+a::before {
+  content: "★";
+  margin-right: 5px;
+  font-size: 14px;
+  color: gold;
+}
+.main-nav .nav_item a::before {
+  content: "⚽";
+  margin-right: 5px;
+  font-size: 14px;
+  color: green;
+}
+.main-nav .nav_item a::after {
+  content: " | ";
+}
+a:hover {
+  color: orange;
+  text-decoration: underline;
+}
+
+a:active {
+  color: lime;
+}
+
+.btn-hover:hover {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+h1::after {
+  content: " 🌟";
+  color: gold;
+}  

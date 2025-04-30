@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostly Fluid con Colores</title>
+    <style>
+        /* Estilos base - Pantallas grandes (desktop) */
+        .contenedor {
+            width: 100%;
+            max-width: 1200px; /* Límite máximo para pantallas muy grandes */
+            margin: 0 auto;
+            background-color: #f9f9f9; /* Fondo gris claro */
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        
+        .fila {
+            display: flex; /* Crea un contenedor flexible */
+            flex-wrap: wrap; /* Permite que los elementos se envuelvan */
+            margin: 0 -10px; /* Compensa el padding de las columnas */
+        }
+        
+        .columna {
+            flex: 1; /* Las columnas crecen para llenar el espacio disponible */
+            padding: 10px;
+            box-sizing: border-box;
+            min-height: 150px;
+        }
+        
+        /* Colores distintivos para cada bloque */
+        .bloque-1 {
+            background-color: #FF9AA2; /* Rosa pastel */
+            border: 2px solid #FF6B7D;
+        }
+        
+        .bloque-2 {
+            background-color: #FFB7B2; /* Coral claro */
+            border: 2px solid #FF8A7A;
+        }
+        
+        .bloque-3 {
+            background-color: #FFDAC1; /* Melocotón */
+            border: 2px solid #FFB347;
+        }
+        
+        .bloque-4 {
+            background-color: #E2F0CB; /* Verde menta */
+            border: 2px solid #A8E6CF;
+        }
+        
+        .bloque-5 {
+            background-color: #B5EAD7; /* Verde agua */
+            border: 2px solid #79C7C5;
+        }
+        
+        /* Estilos para tablets - 2 columnas */
+        @media screen and (max-width: 768px) {
+            .columna {
+                flex: 0 0 50%; /* Cada columna ocupa 50% del ancho */
+                max-width: 50%;
+            }
+            
+            .contenedor {
+                background-color: #e3f2fd; /* Azul claro para tablets */
+            }
+        }
+        
+        /* Estilos para móviles - 1 columna */
+        @media screen and (max-width: 480px) {
+            .columna {
+                flex: 0 0 100%; /* Cada columna ocupa 100% del ancho */
+                max-width: 100%;
+            }
+            
+            .contenedor {
+                background-color: #fff8e1; /* Amarillo claro para móviles */
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <h2>Ejemplo Mostly Fluid</h2>
+        <p>Este diseño se adapta fluidamente a diferentes tamaños de pantalla</p>
+        
+        <div class="fila">
+            <div class="columna">
+                <div class="bloque-1">Bloque 1 (Rosa)</div>
+            </div>
+            <div class="columna">
+                <div class="bloque-2">Bloque 2 (Coral)</div>
+            </div>
+            <div class="columna">
+                <div class="bloque-3">Bloque 3 (Melocotón)</div>
+            </div>
+            <div class="columna">
+                <div class="bloque-4">Bloque 4 (Menta)</div>
+            </div>
+            <div class="columna">
+                <div class="bloque-5">Bloque 5 (Verde agua)</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

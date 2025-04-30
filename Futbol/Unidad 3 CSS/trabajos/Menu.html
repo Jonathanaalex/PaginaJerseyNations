@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            grid-template-rows: 80px 1fr 60px;
+            grid-template-areas: 
+                "header header"
+                "sidebar main"
+                "footer footer";
+            min-height: 100vh;
+            gap: 10px;
+            padding: 10px;
+            background-color: aliceblue;
+        }
+        .header {
+            grid-area: header;
+            background-color: #8a307d;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            border-radius: 5px;
+        }
+        .sidebar {
+            grid-area: sidebar;
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+        .main {
+            grid-area: main;
+            background-color: #fff;
+            padding: 1rem;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .footer {
+            grid-area: footer;
+            background-color: #222;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            border-radius: 5px;
+        }
+        .main-nav {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+        }
+        .main-nav_item {
+            padding: 0 15px;
+        }
+        .main-nav_item a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <header class="header">
+            <nav>
+                <ul class="main-nav">
+                    <li class="main-nav_item"><a href="#">Home</a></li>
+                    <li class="main-nav_item"><a href="#">Cursos</a></li>
+                    <li class="main-nav_item"><a href="#">Instructores</a></li>
+                    <li class="main-nav_item"><a href="#">Blog</a></li>
+                    <li class="main-nav_item"><a href="#">Contacto</a></li>
+                    <li class="main-nav_item"><a href="#">Acerca de</a></li>
+                    <li class="main-nav_item"><a href="#">Iniciar Sesión</a></li>
+                </ul>
+            </nav>
+        </header>
+        <aside class="sidebar">
+            <ul>
+                <li><a href="#">Cursos</a></li>
+                <li><a href="#">Instructores</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Ver más</a></li>
+            </ul>
+        </aside>
+        <main class="main">
+            <h1>Bienvenido a nuestro sitio</h1>
+            <p>Explora los diferentes cursos y recursos que ofrecemos.</p>
+            <p>¡Esperamos que encuentres algo que te interese!</p>
+            <button class="btn-hover">Haz clic aquí</button>
+        </main>
+        <footer class="footer">
+            © 2023 Todos los derechos reservados
+        </footer>
+    </div>
+</body>
+</html>

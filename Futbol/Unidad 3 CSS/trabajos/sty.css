@@ -1,0 +1,39 @@
+.text-container{
+    font-size: 1.5em;
+}
+.text-container div{
+    font-size: 1.5em;
+}
+/*ex*/
+.text-container div {
+    font-size: 1.5ex;
+}
+/*ejemplo de root o rem*/
+:root{
+    font-size: 22px;
+}
+h1{
+    font-size: 2rem;
+}
+h2{
+    font-size: 1rem;
+    color: blue;
+}
+*{
+    box-sizing: border-box;
+    margin: 5;
+    padding: 5;
+}
+.parent{
+    border: 15px solid black dotted;
+    display: inline-block;
+}
+.box{
+    display: inline-block;
+    background-color: red;
+    width: 100px;
+    height: 100 px;
+}
+#two{
+    background-color: green;
+}

@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 6000;
+    padding: 600;
+    background-color: #b69393;
+
+}
+
+header {
+    background-color: #3c3636;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 850px;
+    margin: 20px auto;
+    padding: 10px;
+    line-height: 1.6;
+    margin: 600;
+    padding: 600;
+
+}
+
+h1 {
+    font-size: 2em; /* Medida relativa */
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px; /* Medida absoluta */
+    margin-bottom: 15px;
+}
+
+.highlight {
+    font-size: 120%; /* Medida relativa */
+    color: #007BFF;
+    
+    
+}
+
+.car-image {
+    width: 300px; /* Medida absoluta */
+    height: auto;
+    display: block;
+    margin: 0 auto 20rem;
+}
+
+.info-box {
+    background-color: #f4f4f4;
+    padding: 1em; /* Medida relativa */
+    border: 1px solid #ddd;
+    margin-bottom: 2mm;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.8em; /* Medida relativa */
+    padding: 10px;
+    background-color: #343333;
+    color: white;
+}
+section{
+    background-color: #ddd;
+    display: block;
+    min-width: 600 vw;
+    max-width: 800 vh;
+    height: 500px;
+    background-color: rgb(255, 255, 255);
+    
+
+}
+*{
+    box-sizing: border-box;
+    margin: 20px;
+    padding: 20pt;
+
+}

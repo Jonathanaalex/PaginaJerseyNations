@@ -1,0 +1,15 @@
+/* Basic CSS for setting up a grid layout */
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+    grid-template-rows: auto; /* Rows adjust automatically based on content */
+    gap: 10px; /* Space between grid items */
+    padding: 10px; /* Padding inside the container */
+}
+
+.item {
+    background-color: #f0f0f0; /* Light gray background for grid items */
+    border: 1px solid #ccc; /* Border for grid items */
+    text-align: center; /* Center text inside grid items */
+    padding: 20px; /* Padding inside each grid item */
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .container {
+            position: relative;
+            width: 80%;
+            max-width: 600px;
+            right: auto;
+            top: auto;
+        }
+        .box {
+            position: absolute;
+            width: 100%;
+            padding: 20px;
+            border: 2px solid #d50202;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position:inherit;
+        }
+        .title-box {
+            top: 0;
+        }
+        .text-box {
+            bottom: 0;
+        }
+        .title-box {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+        .text-box {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box title-box">
+            Película Favorita
+        </div>
+        <div class="box text-box">
+            Esta es una breve descripción de una película increíble. Sumérgete en una historia llena de emoción, personajes memorables y una trama que te mantendrá al borde de tu asiento. ¡No te la pierdas!
+        </div>
+    </div>
+</body>
+</html>

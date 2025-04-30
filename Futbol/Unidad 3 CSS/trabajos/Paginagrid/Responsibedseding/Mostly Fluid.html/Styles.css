@@ -1,0 +1,52 @@
+/* -------------------------------------------- */
+/* ESTILOS PARA "MOSTLY FLUID" (DISEÑO ADAPTATIVO) */
+/* -------------------------------------------- */
+
+/* Configuración base (Mobile First) */
+.container {
+    width: 100%;        /* Ancho completo en móviles */
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+}
+
+/* Título fluido */
+h1 {
+    font-size: 6vw;       /* Escala con el ancho de la pantalla (6% del viewport) */
+    text-align: center;
+    color: #333;
+}
+
+/* -------------------------------------------- */
+/* MEDIA QUERIES PARA AJUSTES PROGRESIVOS */
+/* -------------------------------------------- */
+
+/* Tablet: ≥ 768px */
+@media (min-width: 768px) {
+    .container {
+        width: 85%;       /* Reducción progresiva del ancho */
+    }
+
+    h1 {
+        font-size: 4vw;   /* Escala más lenta */
+    }
+}
+
+/* Desktop: ≥ 1024px */
+@media (min-width: 1024px) {
+    .container {
+        width: 75%;       /* Ancho estable con márgenes grandes */
+    }
+
+    h1 {
+        font-size: 2.5rem; /* Tamaño fijo para legibilidad */
+    }
+}
+
+/* Pantallas extra grandes: ≥ 1440px */
+@media (min-width: 1440px) {
+    .container {
+        width: 65%;       /* Márgenes aún más amplios */
+    }
+}

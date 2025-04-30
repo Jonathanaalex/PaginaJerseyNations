@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <p>Rellena tu CV </p>
+    <br><br>
+    <form action="">
+
+    <label for="fname">Nombre</label><br>
+        <input type="text" id="fname" name="lname" required><br>
+        <label for="lname" >Apellido</label ><br>
+        <input type="text" id="lname" name="lname" required size="50"><br>
+        <label for="password">contraseña</label><br>
+        <input type="password" id="contraseña" name="contraseña" required><br>
+            <br>
+            <label for="fname">Sexo <br><br>
+            <label for="Sexo">
+                <input type="radio" name="sexo" value="hombre" checked="checked" />
+                <span>Hombre</span>
+            </label>
+            <label for="sexo">
+                <input type="radio" name="sexo" value="mujer" />
+                <span>Mujer</span>
+            </label></label><br><br><br>
+            
+        <label for="Imagenes">Incluir Mi foto</label>
+        
+            <br><br>
+            <input name="" type="checkbox" checked />
+            <label for="checked">Suscribirme</label><br>
+            
+        
+        <label for="guardar">Guardar cambios</label><br>
+        <input type="reset" value="Borar lod datos introducidos">
+    </form>
+    <fieldset>
+    <legend>Datos Personales</legend>
+    <label for="Provincia">Provincia</label><br><br>
+     
+        <select name="Provincia" id="">
+            <option value="Nochistlan">Nochistlan</option>
+            <option value="Mexicali">Mexicali</option>
+            <option value="Yahualica">Yahualica</option>    
+            <option value="Jalisco">Jalisco</option>
+            <option value="Yahualica">Yahualica</option>    
+            <option value="Jalisco">Jalisco</option>
+        </select>
+   
+    <br><br>
+     <label for="Fecha">Fecha de nacimiento</label>
+     <input type="text" name="Fecha" id=""><span>de</span>
+     <select name="Fecha" id="">
+        <option value="Enero">Enero</option>
+        <option value="febrero">febrero</option>
+        <option value="Marzo">Marzo</option>
+     </select><span>de</span>
+     <input type="date" name="" id="">
+     <select type="date" id="Fecha"></select><br><br>
+
+     <select name="" id="" multiple>
+        <option value="Administracion ">Administracion de base de datos</option>
+        <option value="Analisis">Analisis y programas</option>
+        <option value="Arquitectura">Arquitectura</option>
+        <option value="Calidad"> Calidad</option>
+        <option value="ERP, CRM, BUSINESS">CRM, BUSINES</option>
+     </select>
+     
+</fieldset>
+<p>::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::</p>
+     
+<p>Formulario Personal</p>
+<fieldset>
+    <legend>Formulario</legend>
+    <label for="Nombre">Nombre</label>
+    <input type="text" name="Nombre"><br><br>
+    <label for="Appellidos">Appellidos</label>
+    <input type="text" name="Appellidos"><br><br>
+    <label for="Correo">Correo</label>
+    <input type="email" name="Correo"><br><br>
+    <label for="Seleccion">Seleccione la fecha</label><br>
+    <select name="fecha" id=""><br>
+        <input type="date" name="" id="">
+    </select><br><br>
+    <label for="Edad">Que edad tiene?</label>
+    <select name="Edad" id="" >
+        <option value="18">18</option>
+        <option value="19">19</option>
+        <option value="20">20</option>
+        <option value="22">22</option>
+        <option value="30">30</option>
+        <option value="40">40</option>
+        <option value="50">50</option>
+    </select>
+    <label for="Areas">Seleccione la area que desea trabajar</label><br><br>
+<select name="Areas" id="">
+    <option value="Administracion ">Administracion de base de datos</option>
+    <option value="Analisis">Analisis y programas</option>
+    <option value="Ingeniero">Sistematizacion</option>
+    <option value="Arquitectura">Arquitectura</option>
+    <option value="Calidad"> Calidad</option><br><br>
+</select><br><br>
+     <label for="Trabajo">Desea trabajar en un proyecto</label><br><br>
+     <select name="Trabajo" id="">
+        <option value="Si">Si</option>
+        <option value="No">No</option>
+        <option value="Tal Vez">Tal Vez</option>
+     </select><br><br>
+    <label for="dinero">Cuanto dinero le gustaria ganar</label><br><br>
+    <select name="dinero" id="">
+        <option value="1000">1000</option>
+        <option value="2000">2000</option>
+        <option value="3000">3000</option>
+
+    </select><br><br>
+    <label for="Csado">estado civil</label>
+    <select name="Csado" id="">
+        <option value="Casado">Casado</option>
+        <option value="Soltero">Soltero</option>
+    </select>
+    <center><input type="submit" name="enviar" value="enviar"></center>
+
+
+
+</fieldset>
+</body>
+</html>

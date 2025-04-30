@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es"></html></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primer Letra y Primera Línea con Pseudo-Elementos</title>
+    <style>
+        p:first-letter {font-size: 2em;font-weight: bold;color: blue;}
+
+        p:first-line {font-style: italic;color: green; }
+        
+        nav {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        nav ul li a:hover {
+            color: blue;
+        }
+    </style>
+    <link rel="stylesheet" href="Ejerciciostilo.css">
+</head>
+<body>
+    <h1>Ejemplo de Primera Letra y Primera Línea</h1>
+    <p>El rápido zorro marrón salta sobre el perro perezoso. Este es un ejemplo de cómo se puede aplicar estilo a la primera letra y a la primera línea de un párrafo utilizando pseudo-elementos en CSS.</p>
+</body>
+</html>
